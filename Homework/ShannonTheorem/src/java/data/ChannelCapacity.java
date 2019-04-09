@@ -40,7 +40,7 @@ public class ChannelCapacity {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     
-    public String getCapacidadCanal(@PathParam("signalPower") double bandwidth, @PathParam("signalPower") double signalPower, @PathParam("noisePower") double noisePower ) {
+    public String getChannelCapacity(@PathParam("signalPower") double bandwidth, @PathParam("signalPower") double signalPower, @PathParam("noisePower") double noisePower ) {
         
         double channelCapacity = bandwidth + (Math.log(1+signalPower/noisePower)/Math.log(2));
         
