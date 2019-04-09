@@ -20,7 +20,7 @@ import javax.ws.rs.core.MediaType;
  *
  * @author Mike
  */
-@Path("capacidadCanal")
+@Path("channelCapacity")
 public class ChannelCapacity {
 
     @Context
